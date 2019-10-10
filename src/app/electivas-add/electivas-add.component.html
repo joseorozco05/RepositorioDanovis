@@ -1,0 +1,46 @@
+<p style="text-align: center">Inscribir Estudiante</p>
+
+
+<div class="form-group">
+    <div>
+            <label>Identificación:
+                    <input [(ngModel)]= "electivas.id" class="form-control form-control-sm" placeholder="Digite Identificación " type="text"/>
+                </label>
+    </div>
+   
+    <div>
+            <label>Nombre:
+                    <input [(ngModel)]= "electivas.nombre" class="form-control form-control-sm"  placeholder="Digite Nombre"   type="text"/>
+                </label>
+    </div>
+   
+
+    <div>
+            <label>Electiva:
+                <select [(ngModel)]= "electivas.electiva">
+                    <option>Calidad de software</option>
+                    <option> Procesos Agiles de software</option>
+                    <option >Gestion de Proyectos</option>
+                    <option > Analitica de Datos</option>
+                </select>
+                    
+            </label>
+    </div>
+   
+    <div>
+            <label>Direccion de Correo:
+                    <input [(ngModel)]= "electivas.correo" placeholder="Digite su correo electronico" type="text" class="form-control form-control-sm"/>
+            </label>
+    </div>
+   
+</div>
+
+<div>
+    <label>Notificacion:
+      <input type="checkbox" [(ngModel)]= "electivas.notificacion"  >
+    </label>
+</div>
+
+<div >
+    <button (click)="add()" class="btn btn-primary"> Agregar</button>
+</div>

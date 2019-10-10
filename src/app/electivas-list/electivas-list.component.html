@@ -1,0 +1,28 @@
+<p>Lista de Estudiantes</p>
+<div >
+        <h1 class="h2"> Lista</h1> 
+</div>
+
+<div class="container">
+    <table class="table">
+       <thead class="thead-dark">
+           <tr>
+               <th>Id</th>
+               <th>Nombre</th>
+               <th>Electiva</th>
+               <th>Correo</th>
+               <th>Notificacion</th>
+               <th></th>
+               <th></th>
+           </tr>
+       </thead>
+
+       <tr *ngFor="let electivas of electiva">
+           <td>{{electivas.id}}</td>
+           <td>{{electivas.nombre}}</td>
+           <td>{{electivas.electiva}}</td>
+           <td>{{electivas.correo}}</td>
+           <td><span *ngIf="electivas.notificacion===true;"> <b>notificacion</b> </span></td> 
+        </tr>
+    </table>
+</div>
